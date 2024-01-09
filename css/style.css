@@ -51,17 +51,17 @@ nav {
     color: white;
 }
 
-@media screen and (max-width:480px) {
-    nav {}
+.nav-links {
+    display: none;
+}
 
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-    }
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .nav-links {
-        display: none;
-    }
+.nav-links {
+    list-style-type: none;
 }
 
 /* SECTIONS */
@@ -251,4 +251,67 @@ footer {
         width: 40%;
     }
 
+}
+
+@media screen and (min-width:992px) {
+
+    /* section 2 */
+    #planning .container {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    /* section 4  */
+    #why-us .container .card {
+        width: calc(100% / 3 - 25px);
+    }
+
+    #about-us .container .col-left {
+        width: 70%;
+    }
+
+    #about-us .container .col-right {
+        width: 30%;
+    }
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .nav-links {
+        display: block;
+        justify-content: space-around;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 50px;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .bars {
+        display: none;
+    }
 }
