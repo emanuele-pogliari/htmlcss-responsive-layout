@@ -124,6 +124,24 @@ nav {
 /* section 5 */
 
 #about-us {
-    height: 1430px;
+    height: 1600px;
+    /* test rules */
+}
+
+/* Section 6 */
+
+#get-started {
+    height: 615px;
+    /* test rules */
+
+    background-color: #9792E4;
+}
+
+/* footer */
+
+footer {
+    background-color: #333333;
+
+    height: 230px;
     /* test rules */
 }
