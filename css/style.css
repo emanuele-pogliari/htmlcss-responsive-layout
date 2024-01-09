@@ -32,6 +32,17 @@ nav {
 /* Sections */
 
 
+/* Section 1 */
+
+
+#intro .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 60px;
+
+}
 
 #intro .card {
     width: 310px;
@@ -42,13 +53,31 @@ nav {
 }
 
 #intro .card:nth-of-type(1) {
+    padding-bottom: 0;
     height: 605px;
 }
 
-#intro .card-container {
+
+/* Section 2 */
+
+#planning {
+    background-color: #9792E4;
+    padding-top: 60px;
+}
+
+#planning .card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    padding-bottom: 60px;
+}
+
+#planning .card {
+    padding: 35px;
+    background-color: white;
+    width: 310px;
+    height: 615px;
+    border-radius: 35px;
 
 }
