@@ -45,7 +45,6 @@ nav {
 
 @media screen and (max-width:480px) {
     nav {
-        margin-bottom: 50px;
         padding: 15px 30px 20px;
 
         height: 75px;
@@ -102,6 +101,7 @@ nav {
     /* test rules */
 
     background-color: #9792E4;
+    border-radius: 35px;
 }
 
 #testimonials .card:nth-of-type(1) {
@@ -119,4 +119,11 @@ nav {
 
 #why-us .card {
     background-color: white;
+}
+
+/* section 5 */
+
+#about-us {
+    height: 1430px;
+    /* test rules */
 }
