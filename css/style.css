@@ -89,6 +89,9 @@ nav {
 
     border-radius: 35px;
 
+}
+
+#planning .card:nth-of-type(2) {
     background-color: white;
 }
 
@@ -105,5 +108,15 @@ nav {
 
     height: 340px;
     /* test rules */
+    background-color: white;
+}
+
+/* Section 4 */
+
+#why-us {
+    background-color: #9792E4;
+}
+
+#why-us .card {
     background-color: white;
 }
