@@ -4,19 +4,53 @@
     box-sizing: border-box;
 }
 
-/* regole di reset */
+/*  reset rules */
+
+
+/* Common elements */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    padding-bottom: 60px;
+}
+
+.card {
+
+    width: 310px;
+    height: 360px;
+    /* test rules */
+
+    padding: 35px;
+
+    border-radius: 15px;
+}
+
+section {
+    padding-top: 60px;
+    /* test rules */
+}
+
+/* end common elements */
+
+
+/* nav */
 
 nav {
     width: 100%;
 }
 
-/* nav */
 @media screen and (max-width:480px) {
     nav {
-        height: 75px;
-        background-color: #0084FD;
         margin-bottom: 50px;
         padding: 15px 30px 20px;
+
+        height: 75px;
+
+        background-color: #0084FD;
         color: white;
         font-family: 'PT Sans', sans-serif;
     }
@@ -25,59 +59,51 @@ nav {
         display: flex;
         justify-content: space-between;
     }
-
 }
 
-
-/* Sections */
+/* SECTIONS */
 
 
 /* Section 1 */
 
-
-#intro .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding-bottom: 60px;
-
-}
-
 #intro .card {
-    width: 310px;
-    height: 360px;
     background-color: #B5DDFF;
-    padding: 35px;
-    border-radius: 15px;
 }
 
 #intro .card:nth-of-type(1) {
     padding-bottom: 0;
+
     height: 605px;
+    /* test rules */
 }
 
 
 /* Section 2 */
 
 #planning {
-    background-color: #9792E4;
-    padding-top: 60px;
-}
 
-#planning .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding-bottom: 60px;
+    background-color: #9792E4;
 }
 
 #planning .card {
-    padding: 35px;
-    background-color: white;
-    width: 310px;
-    height: 615px;
+
     border-radius: 35px;
 
+    background-color: white;
+}
+
+/* Section 3 */
+
+#testimonials .card {
+    height: 500px;
+    /* test rules */
+
+    background-color: #9792E4;
+}
+
+#testimonials .card:nth-of-type(1) {
+
+    height: 340px;
+    /* test rules */
+    background-color: white;
 }
