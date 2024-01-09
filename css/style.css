@@ -6,6 +6,9 @@
 
 /*  reset rules */
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
 
 /* Common elements */
 
@@ -19,12 +22,11 @@
 }
 
 .card {
-
     width: 310px;
     height: 360px;
     /* test rules */
 
-    padding: 35px;
+    padding: 30px 30px 35px;
 
     border-radius: 15px;
 }
@@ -40,23 +42,25 @@ section {
 /* nav */
 
 nav {
+    padding: 15px 30px 20px;
+
     width: 100%;
+    height: 75px;
+
+    background-color: #0084FD;
+    color: white;
 }
 
 @media screen and (max-width:480px) {
-    nav {
-        padding: 15px 30px 20px;
-
-        height: 75px;
-
-        background-color: #0084FD;
-        color: white;
-        font-family: 'PT Sans', sans-serif;
-    }
+    nav {}
 
     .nav-container {
         display: flex;
         justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
     }
 }
 
@@ -67,6 +71,7 @@ nav {
 
 #intro .card {
     background-color: #B5DDFF;
+    text-align: center;
 }
 
 #intro .card:nth-of-type(1) {
@@ -74,6 +79,19 @@ nav {
 
     height: 605px;
     /* test rules */
+}
+
+#intro .demo-text,
+#intro .card h2 {
+    padding: 30px 0 35px;
+}
+
+#intro .card p {
+    line-height: 21px;
+}
+
+#intro .get-app {
+    padding-bottom: 35px;
 }
 
 
