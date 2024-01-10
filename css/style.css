@@ -22,8 +22,6 @@ body {
 }
 
 .card {
-    /* width: 310px; */
-    /* test rules */
 
     padding: 30px 30px 35px;
 
@@ -32,7 +30,6 @@ body {
 
 section {
     padding: 50px 30px 50px;
-    /* test rules */
 }
 
 .bg-sc-even {
@@ -77,7 +74,7 @@ nav {
 
 nav .fa-bars {
     font-size: 30px;
-    color: white
+    color: white;
 }
 
 /* SECTIONS */
@@ -95,8 +92,6 @@ nav .fa-bars {
     text-align: start;
     padding-bottom: 0;
 
-    /* height: 605px; */
-    /* test rules */
 }
 
 #intro .demo-text,
@@ -116,9 +111,6 @@ nav .fa-bars {
 
 
 #intro .card-sm h3 {
-    color: #0084FD;
-    font-weight: bold;
-    font-size: 20px;
     padding-top: 30px;
     padding-bottom: 40px;
 }
@@ -157,20 +149,39 @@ nav .fa-bars {
 
 /* Section 2 */
 
-#planning .container {
-    gap: 35px;
+
+#planning .card {
+    line-height: 1.8;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-#planning .card:nth-of-type(2) {
-
-    border-radius: 35px;
-    background-color: white;
+#planning .card:nth-of-type(1) {
+    color: white;
 }
 
 #planning .card h2 {
-    padding: 90px 0 55px;
+    padding: 70px 0 55px;
 }
 
+
+#planning .card:nth-of-type(2) {
+    border-radius: 35px;
+    background-color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#planning .card:nth-of-type(2) h4 {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+#planning .card:nth-of-type(2) p {
+    font-style: italic;
+    font-size: 1.1em;
+    padding-bottom: 30px;
+}
 
 .planning-img img {
     width: 100%;
@@ -182,7 +193,6 @@ nav .fa-bars {
     transform: translateY(-50%);
     color: black;
 }
-
 
 
 /* Section 3 */
@@ -201,8 +211,6 @@ nav .fa-bars {
 
 #testimonials .testimonials-card:nth-of-type(1) {
 
-    height: 340px;
-    /* test rules */
     background-color: white;
 }
 
@@ -228,26 +236,87 @@ nav .fa-bars {
 
 /* Section 4 */
 
+#why-us .section-4-title {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding-bottom: 60px;
+}
+
+#why-us h4 {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #9792E4;
+}
+
 #why-us .card {
     background-color: white;
 }
 
-/* section 5 */
 
-#about-us {
-    height: 1600px;
-    /* test rules */
+#why-us .number-benefits {
+    font-size: 50px;
+    color: #9792E4;
+    font-weight: bold;
 }
 
+#why-us p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.8;
+}
+
+#why-us button {
+    padding: 15px 50px;
+    letter-spacing: .2rem;
+    color: white;
+    background-color: #9792E4;
+}
+
+/* section 5 */
+
+#about-us .col-left h2 {
+    font-size: 40px;
+    color: #9792E4;
+    padding: 20px 0 30px;
+}
+
+#about-us .col-left .about-text {
+    line-height: 35px;
+}
+
+#about-us .col-left .about-text:nth-of-type(1) {
+    padding-bottom: 60px;
+}
 
 #about-us .about-img {
     width: 200px;
     height: 200px;
+    margin-bottom: 30px;
 }
 
 #about-us img {
     width: 100%;
     border-radius: 50%;
+}
+
+#about-us .col-right p {
+    font-size: 22px;
+    color: #9792E4;
+    font-weight: bold;
+}
+
+#about-us .btn .fa-linkedin {
+    margin-right: 10px;
+}
+
+
+#about-us .btn {
+    background-color: #9792E4;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
 }
 
 .rel-img {
@@ -265,8 +334,39 @@ nav .fa-bars {
 
 #get-started {
     text-align: center;
-    height: 615px;
-    /* test rules */
+}
+
+#get-started {
+    padding: 60px 45px;
+    color: white;
+}
+
+
+#get-started strong {
+    display: block;
+    padding: 40px 0;
+    color: #FDC15F;
+    font-size: 60px;
+}
+
+#get-started h2 {
+    font-size: 1em;
+    font-weight: 300;
+    color: #BAB7ED;
+    padding-bottom: 25px;
+}
+
+#get-started .btn {
+    padding: 20px 70px;
+    letter-spacing: .2rem;
+    color: #9792E4;
+    margin: 40px 20px;
+    border-radius: 50px;
+}
+
+#get-started p {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 /* footer */
@@ -277,6 +377,18 @@ footer {
     text-align: center;
     height: 230px;
     /* test rules */
+
+    padding: 45px 30px 40px;
+    color: white;
+}
+
+footer .text-1 {
+    padding-bottom: 60px;
+}
+
+footer a {
+    color: #9792E4;
+    text-decoration: underline;
 }
 
 @media screen and (min-width:768px) {
@@ -305,10 +417,21 @@ footer {
         padding-left: 0;
     }
 
-
     /* section 2 */
 
-    #planning .card {}
+    #planning .card:nth-of-type(1) h2 {
+        font-size: 55px;
+    }
+
+    #planning .card:nth-of-type(2) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #planning .card:nth-of-type(2) h4 {
+        font-size: 23px;
+    }
+
 
     /* section 3 */
 
@@ -331,12 +454,10 @@ footer {
         justify-content: center;
     }
 
-
-
-
     #why-us .container .card {
         width: calc(50% - 25px);
     }
+
 
     /* section 5 */
 
@@ -354,9 +475,7 @@ footer {
 
     #about-us .container .col-left {
         width: 60%;
-        height: 830px;
-        background-color: #9792E4;
-        /* test rules */
+
     }
 
     #about-us .container .col-right {
@@ -365,6 +484,16 @@ footer {
         align-self: flex-start;
     }
 
+
+    #get-started strong {
+        font-size: 80px;
+    }
+
+    #get-started h2 {
+        font-size: 1em;
+        color: #BAB7ED;
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -373,7 +502,19 @@ footer {
     #planning .container {
         flex-direction: row;
         justify-content: center;
+    }
 
+    #planning .card:nth-of-type(1) {
+        width: 50%;
+    }
+
+    #planning .card:nth-of-type(2) {
+        width: 40%;
+        align-self: flex-end;
+    }
+
+    #planning .card:nth-of-type(1) h2 {
+        font-size: 1.8em;
     }
 
     /* section 4  */
@@ -389,8 +530,6 @@ footer {
         width: 30%;
     }
 }
-
-
 
 
 @media screen and (min-width:1200px) {
@@ -455,13 +594,6 @@ footer {
 
 
 
-/* test */
-.planning-img {
-    /* max-width: 315px;
-    height: 285px; */
-    text-align: center;
-}
-
 .app-dev-img img {
     width: 100%;
 }
@@ -480,11 +612,4 @@ footer {
 
 .card-app {
     text-align: center;
-}
-
-.section-4-title {
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    padding-bottom: 60px;
 }
