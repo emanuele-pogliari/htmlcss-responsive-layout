@@ -18,7 +18,7 @@ body {
     align-items: center;
     gap: 25px;
 
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 .card {
@@ -37,6 +37,12 @@ section {
 
 .bg-sc-even {
     background-color: #9792E4;
+}
+
+.btn {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 25px;
 }
 
 /* end common elements */
@@ -58,10 +64,6 @@ nav {
     display: none;
 }
 
-.nav-container div {
-    background-color: #a2b9cf;
-}
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -73,6 +75,11 @@ nav {
     list-style-type: none;
 }
 
+nav .fa-bars {
+    font-size: 30px;
+    color: white
+}
+
 /* SECTIONS */
 
 
@@ -81,12 +88,14 @@ nav {
 #intro .card {
     background-color: #B5DDFF;
     text-align: center;
+
 }
 
 #intro .card:nth-of-type(1) {
+    text-align: start;
     padding-bottom: 0;
 
-    height: 605px;
+    /* height: 605px; */
     /* test rules */
 }
 
@@ -95,12 +104,54 @@ nav {
     padding: 30px 0 35px;
 }
 
-#intro .card p {
-    line-height: 21px;
-}
-
 #intro .get-app {
     padding-bottom: 35px;
+}
+
+#intro .card h3 {
+    color: #0084FD;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+
+#intro .card-sm h3 {
+    color: #0084FD;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#intro p {
+    line-height: 1.8;
+    color: #667C8F;
+}
+
+.get-button {
+    padding: 10px 45px;
+    background-color: #0084FD;
+    color: white;
+    letter-spacing: .2rem;
+}
+
+.get-button i {
+    margin-right: 10px;
+}
+
+.phone-img {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.phone-img img {
+    width: 100%;
+    display: block;
+}
+
+.fa-solid {
+    font-size: 70px;
+    color: #0084FD;
 }
 
 
@@ -118,6 +169,18 @@ nav {
 
 #planning .card h2 {
     padding: 90px 0 55px;
+}
+
+
+.planning-img img {
+    width: 100%;
+}
+
+.round-btn .fa-solid {
+    font-size: 15px;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    color: black;
 }
 
 
@@ -152,6 +215,13 @@ nav {
     margin-right: auto;
 }
 
+#testimonials img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 #testimonials .testimonials-description p {
     padding-bottom: 30px;
 }
@@ -167,6 +237,28 @@ nav {
 #about-us {
     height: 1600px;
     /* test rules */
+}
+
+
+#about-us .about-img {
+    width: 200px;
+    height: 200px;
+}
+
+#about-us img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.rel-img {
+    position: relative;
+}
+
+.fa-quote-left {
+    position: absolute;
+    top: -10px;
+    left: 150px;
+    color: #9792E4;
 }
 
 /* Section 6 */
@@ -208,20 +300,26 @@ footer {
         width: calc(100% / 3 * 2 - 25px);
     }
 
+    #intro .phone-img {
+        width: 58%;
+        padding-left: 0;
+    }
+
+
     /* section 2 */
 
-    #planning .card {
-        width: 100%;
-    }
+    #planning .card {}
 
     /* section 3 */
 
     #testimonials .testimonials-card {
+        width: 100%;
         flex-direction: row;
     }
 
-    #testimonials .testimonials-card {
-        width: 100%;
+    #testimonials .testimonials-img {
+        min-width: 200px;
+        min-height: 200px;
     }
 
     /* section 4 */
@@ -232,6 +330,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+
 
 
 
@@ -251,7 +350,6 @@ footer {
 
 
         /* test */
-
     }
 
     #about-us .container .col-left {
@@ -262,10 +360,9 @@ footer {
     }
 
     #about-us .container .col-right {
-        background-color: #9792E4;
-        height: 830px;
         /* test */
         width: 40%;
+        align-self: flex-start;
     }
 
 }
@@ -320,6 +417,7 @@ footer {
         justify-content: space-around;
         gap: 50px;
         list-style-type: none;
+        align-items: center;
     }
 
     a {
@@ -335,6 +433,23 @@ footer {
         height: 425px;
         /* test */
     }
+
+    .card-lg {
+        display: flex;
+    }
+
+    .get-app {
+        width: 60%;
+    }
+
+    .phone-img img {
+        width: 80%;
+
+    }
+
+    .phone-img {
+        align-self: end;
+    }
 }
 
 
@@ -342,20 +457,22 @@ footer {
 
 /* test */
 .planning-img {
-    max-width: 315px;
-    height: 285px;
-    background-color: white;
+    /* max-width: 315px;
+    height: 285px; */
     text-align: center;
 }
 
-.app-dev-img {
-    max-width: 315px;
-    height: 280px;
+.app-dev-img img {
+    width: 100%;
+}
+
+.planning-card:nth-of-type(2) {
+    text-align: center;
 }
 
 .round-btn {
     background-color: #9792E4;
-
+    margin: auto;
     width: 50px;
     height: 50px;
     border-radius: 50%;
