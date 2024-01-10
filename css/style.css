@@ -22,8 +22,7 @@ body {
 }
 
 .card {
-    width: 310px;
-    height: 360px;
+    /* width: 310px; */
     /* test rules */
 
     padding: 30px 30px 35px;
@@ -32,8 +31,12 @@ body {
 }
 
 section {
-    padding-top: 60px;
+    padding: 50px 30px 50px;
     /* test rules */
+}
+
+.bg-sc-even {
+    background-color: #9792E4;
 }
 
 /* end common elements */
@@ -55,9 +58,15 @@ nav {
     display: none;
 }
 
+.nav-container div {
+    background-color: #a2b9cf;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .nav-links {
@@ -97,10 +106,6 @@ nav {
 
 /* Section 2 */
 
-#planning {
-    background-color: #9792E4;
-}
-
 #planning .container {
     gap: 35px;
 }
@@ -122,28 +127,36 @@ nav {
     text-align: center;
 }
 
-#testimonials .card {
-    height: 500px;
-    /* test rules */
+#testimonials .testimonials-card {
 
-    background-color: #9792E4;
     border-radius: 35px;
+    background-color: #9792E4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-#testimonials .card:nth-of-type(1) {
+#testimonials .testimonials-card:nth-of-type(1) {
 
     height: 340px;
     /* test rules */
     background-color: white;
 }
 
+#testimonials .testimonials-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#testimonials .testimonials-description p {
+    padding-bottom: 30px;
+}
 
 /* Section 4 */
-
-#why-us {
-    background-color: #9792E4;
-}
 
 #why-us .card {
     background-color: white;
@@ -159,10 +172,9 @@ nav {
 /* Section 6 */
 
 #get-started {
+    text-align: center;
     height: 615px;
     /* test rules */
-
-    background-color: #9792E4;
 }
 
 /* footer */
@@ -170,26 +182,20 @@ nav {
 footer {
     background-color: #333333;
 
+    text-align: center;
     height: 230px;
     /* test rules */
 }
 
 @media screen and (min-width:768px) {
 
-
-    .container {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
     /* section 1 */
 
     #intro .container {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: stretch;
-        justify-content: space-around;
+        justify-content: center;
     }
 
 
@@ -210,9 +216,12 @@ footer {
 
     /* section 3 */
 
-    #testimonials .card {
+    #testimonials .testimonials-card {
+        flex-direction: row;
+    }
+
+    #testimonials .testimonials-card {
         width: 100%;
-        height: 140px;
     }
 
     /* section 4 */
@@ -239,15 +248,23 @@ footer {
     #about-us .container {
         display: flex;
         flex-direction: row;
+
+
+        /* test */
+
     }
 
     #about-us .container .col-left {
         width: 60%;
-        height: 700px;
+        height: 830px;
+        background-color: #9792E4;
         /* test rules */
     }
 
     #about-us .container .col-right {
+        background-color: #9792E4;
+        height: 830px;
+        /* test */
         width: 40%;
     }
 
@@ -295,7 +312,6 @@ footer {
 
     .nav-links {
         display: block;
-        justify-content: space-around;
     }
 
     ul {
@@ -314,4 +330,44 @@ footer {
     .bars {
         display: none;
     }
+
+    #why-us .card {
+        height: 425px;
+        /* test */
+    }
+}
+
+
+
+
+/* test */
+.planning-img {
+    max-width: 315px;
+    height: 285px;
+    background-color: white;
+    text-align: center;
+}
+
+.app-dev-img {
+    max-width: 315px;
+    height: 280px;
+}
+
+.round-btn {
+    background-color: #9792E4;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-app {
+    text-align: center;
+}
+
+.section-4-title {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding-bottom: 60px;
 }
