@@ -141,7 +141,7 @@ nav .fa-bars {
     display: block;
 }
 
-.fa-solid {
+#intro .fa-solid {
     font-size: 70px;
     color: #0084FD;
 }
@@ -187,6 +187,18 @@ nav .fa-bars {
     width: 100%;
 }
 
+.planning-card:nth-of-type(2) {
+    text-align: center;
+}
+
+.round-btn {
+    background-color: #9792E4;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 .round-btn .fa-solid {
     font-size: 15px;
     margin-top: 50%;
@@ -194,19 +206,48 @@ nav .fa-bars {
     color: black;
 }
 
+.app-dev-img img {
+    width: 100%;
+}
+
 
 /* Section 3 */
-#testimonials {
-    text-align: center;
+
+.testimonials-text h2 {
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+.testimonials-text strong {
+    font-size: 36px;
+    color: #9792E4;
+    padding-bottom: 45px;
+    display: block;
+}
+
+.testimonials-text p {
+    line-height: 1.8;
+    padding-bottom: 20px;
 }
 
 #testimonials .testimonials-card {
-
     border-radius: 35px;
     background-color: #9792E4;
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 30px 25px;
+}
+
+.testimonials-card p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+#testimonials .testimonials-text {
+    text-align: center;
 }
 
 #testimonials .testimonials-card:nth-of-type(1) {
@@ -230,8 +271,20 @@ nav .fa-bars {
     object-fit: cover;
 }
 
-#testimonials .testimonials-description p {
-    padding-bottom: 30px;
+#testimonials .testimonials-description {
+    text-align: center;
+    margin: auto;
+}
+
+#testimonials .testimonials-description strong {
+    padding-top: 35px;
+    display: block;
+    letter-spacing: 0.2em;
+}
+
+#testimonials .fa-quote-left,
+#testimonials .fa-quote-right {
+    vertical-align: top;
 }
 
 /* Section 4 */
@@ -278,7 +331,7 @@ nav .fa-bars {
 #about-us .col-left h2 {
     font-size: 40px;
     color: #9792E4;
-    padding: 20px 0 30px;
+    padding: 0px 0 30px;
 }
 
 #about-us .col-left .about-text {
@@ -301,7 +354,8 @@ nav .fa-bars {
 }
 
 #about-us .col-right p {
-    font-size: 22px;
+    width: 40%;
+    font-size: 24px;
     color: #9792E4;
     font-weight: bold;
 }
@@ -323,10 +377,11 @@ nav .fa-bars {
     position: relative;
 }
 
-.fa-quote-left {
+#about-us .fa-quote-left {
+    font-size: 70px;
     position: absolute;
     top: -10px;
-    left: 150px;
+    left: 145px;
     color: #9792E4;
 }
 
@@ -413,11 +468,15 @@ footer a {
     }
 
     #intro .phone-img {
-        width: 58%;
+        width: 62%;
         padding-left: 0;
     }
 
     /* section 2 */
+
+    #planning .container {
+        gap: 65px;
+    }
 
     #planning .card:nth-of-type(1) h2 {
         font-size: 55px;
@@ -438,6 +497,10 @@ footer a {
     #testimonials .testimonials-card {
         width: 100%;
         flex-direction: row;
+    }
+
+    #testimonials .testimonials-description {
+        text-align: left;
     }
 
     #testimonials .testimonials-img {
@@ -468,9 +531,6 @@ footer a {
     #about-us .container {
         display: flex;
         flex-direction: row;
-
-
-        /* test */
     }
 
     #about-us .container .col-left {
@@ -479,7 +539,6 @@ footer a {
     }
 
     #about-us .container .col-right {
-        /* test */
         width: 40%;
         align-self: flex-start;
     }
@@ -505,16 +564,21 @@ footer a {
     }
 
     #planning .card:nth-of-type(1) {
-        width: 50%;
+        width: 45%;
     }
 
     #planning .card:nth-of-type(2) {
-        width: 40%;
+        width: 35%;
         align-self: flex-end;
+        padding-top: 0;
     }
 
     #planning .card:nth-of-type(1) h2 {
         font-size: 1.8em;
+    }
+
+    #planning .app-dev-img {
+        padding: 30px;
     }
 
     /* section 4  */
@@ -568,13 +632,9 @@ footer a {
         display: none;
     }
 
-    #why-us .card {
-        height: 425px;
-        /* test */
-    }
-
     .card-lg {
         display: flex;
+        gap: 50px;
     }
 
     .get-app {
@@ -583,33 +643,11 @@ footer a {
 
     .phone-img img {
         width: 80%;
+        margin: auto;
 
     }
 
     .phone-img {
         align-self: end;
     }
-}
-
-
-
-
-.app-dev-img img {
-    width: 100%;
-}
-
-.planning-card:nth-of-type(2) {
-    text-align: center;
-}
-
-.round-btn {
-    background-color: #9792E4;
-    margin: auto;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.card-app {
-    text-align: center;
 }
