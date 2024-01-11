@@ -84,7 +84,7 @@ nav .fa-bars {
 /* SECTIONS */
 
 
-/* Section 1 */
+/*  INTRO SECTION */
 
 #intro .card {
     background-color: #B5DDFF;
@@ -150,7 +150,7 @@ nav .fa-bars {
 }
 
 
-/* Section 2 */
+/* PLANNING SECTION */
 
 
 #planning .card {
@@ -215,7 +215,7 @@ nav .fa-bars {
 }
 
 
-/* Section 3 */
+/* TESTIMONIALS SECTION */
 
 .testimonials-text h2 {
     font-size: 1em;
@@ -291,7 +291,7 @@ nav .fa-bars {
     vertical-align: top;
 }
 
-/* Section 4 */
+/* WHY US SECTION */
 
 #why-us .section-4-title {
     text-align: center;
@@ -330,7 +330,7 @@ nav .fa-bars {
     background-color: #9792E4;
 }
 
-/* section 5 */
+/* ABOUT US SECTION */
 
 #about-us .col-left h2 {
     font-size: 40px;
@@ -358,7 +358,7 @@ nav .fa-bars {
 }
 
 #about-us .col-right p {
-    width: 40%;
+    width: 80%;
     font-size: 24px;
     color: #9792E4;
     font-weight: bold;
@@ -389,7 +389,7 @@ nav .fa-bars {
     color: #9792E4;
 }
 
-/* Section 6 */
+/* GET STARTED SECTION */
 
 #get-started {
     text-align: center;
@@ -428,7 +428,7 @@ nav .fa-bars {
     font-weight: bold;
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
     background-color: #333333;
@@ -452,7 +452,7 @@ footer a {
 
 @media screen and (min-width:768px) {
 
-    /* section 1 */
+    /* intro  */
 
     #intro .container {
         flex-wrap: wrap;
@@ -476,7 +476,7 @@ footer a {
         padding-left: 0;
     }
 
-    /* section 2 */
+    /* planning */
 
     #planning .container {
         gap: 65px;
@@ -496,7 +496,7 @@ footer a {
     }
 
 
-    /* section 3 */
+    /*  testimonials */
 
     #testimonials .testimonials-card {
         width: 100%;
@@ -512,7 +512,7 @@ footer a {
         min-height: 200px;
     }
 
-    /* section 4 */
+    /* why us  */
 
     #why-us .container {
         display: flex;
@@ -526,7 +526,7 @@ footer a {
     }
 
 
-    /* section 5 */
+    /* about us */
 
     #about-us {
         height: 100%;
@@ -547,6 +547,7 @@ footer a {
         align-self: flex-start;
     }
 
+    /* get started */
 
     #get-started strong {
         font-size: 80px;
@@ -561,7 +562,8 @@ footer a {
 
 @media screen and (min-width:992px) {
 
-    /* section 2 */
+    /* planning */
+
     #planning .container {
         flex-direction: row;
         justify-content: center;
@@ -585,10 +587,13 @@ footer a {
         padding: 30px;
     }
 
-    /* section 4  */
+    /* why us */
+
     #why-us .container .card {
         width: calc(100% / 3 - 25px);
     }
+
+    /* about us */
 
     #about-us .container .col-left {
         width: 70%;
@@ -602,12 +607,21 @@ footer a {
 
 @media screen and (min-width:1200px) {
 
+    /* common elements */
+
     .container {
         max-width: 1200px;
         margin: auto;
         padding-left: 0;
         padding-right: 0;
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* nav */
 
     .nav-container {
         max-width: 1200px;
@@ -627,14 +641,11 @@ footer a {
         align-items: center;
     }
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
     .bars {
         display: none;
     }
+
+    /* intro */
 
     .card-lg {
         display: flex;
